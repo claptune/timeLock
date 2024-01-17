@@ -11,7 +11,16 @@ With adressing the embedded webserver through the hardcoded IP-address of the MC
 ## How to build
 ### Hardware
 ![shem](misc/shem.png)
-To build the device, it is recommended to use prefabricated modules from the "Maker" shelf. As you can see in the picture above, the device consists of 4 different modules: A DC/DC converter that converts the voltage from +12V to +5V for the ESP32 and the relais board, an ESP32 (here: DevKitC), a standard relais board with one channel ([amazon example](https://www.amazon.de/gp/product/B07XY2C5M5/ref=ppx_yo_dt_b_asin_title_o02_s04?ie=UTF8&psc=1)) and the magnet itself ([amazon example](https://www.amazon.de/gp/product/B08NCYPHH7/ref=ppx_yo_dt_b_asin_title_o02_s02?ie=UTF8&psc=1)). The challenge with the hardware setup is to keep the package size as small as possible if desired. Hot glue is our friend here.
+To build the device, it is recommended to use prefabricated modules from the "Maker" shelf. As you can see in the picture above, the device consists of 4 different modules: A DC/DC converter that converts the voltage from +12V to +5V for the ESP32 and the relais board, an ESP32 (here: DevKitC), a standard relais board with one channel and the magnet itself . The challenge with the hardware setup is to keep the package size as small as possible if desired. Hot glue is our friend here.
+
+#### used hardware
+- magnet - ([amazon](https://www.amazon.de/gp/product/B08NCYPHH7/ref=ppx_yo_dt_b_asin_title_o02_s02?ie=UTF8&psc=1))
+- relais board - ([amazon](https://www.amazon.de/gp/product/B07XY2C5M5/ref=ppx_yo_dt_b_asin_title_o02_s04?ie=UTF8&psc=1))
+- ESP32 - ([ebay](https://www.ebay.com/itm/285477078111))
+- DC/DC converter - ([ebay](https://www.ebay.com/itm/385172480906))
+- Some wires / jumper wires / terminals to connect all the parts as shown in the figure.
+
+#### notes
 
 The magnet which was choosen for the actual design was one with +12V and 180kg holding force. This was given in the datasheet - even if I would not be suprised if the force would be less under some real tests. Nevertheless, for bounding purpose the holding force is absolutly enough.
 
